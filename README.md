@@ -8,11 +8,11 @@
 
 ### Funciones:
 - **Mover origen al origen mundial**: Establece el origen del objeto activo en el origen mundial (0,0,0). (mesh.move_origin_to_world)
-- **Calcular distancia**: Calcula la distancia entre el cursor 3D y el origen mundial. (object.calcular_distancia)
-- **Rotar objetos**: Permite rotar un objeto en un ángulo especificado. (object.rotar_objeto)
-- **Escalar objetos**: Cambia la escala de un objeto con un factor especificado. (object.ajustar_escala_uniformemente)
-- **Copiar y distribuir objetos**: Crea varias copias de un objeto y las distribuye a una distancia determinada. (object.copiar_y_distribuir)
-- **Aplicar material**: Aplica un material personalizado a los objetos seleccionados. (object.aplicar_material_predeterminado)
+- **Calcular distancia**: Calcula la distancia entre el cursor 3D y el origen mundial. Mover el cursor a algun lado en el espacio y presiona calcular distancia (object.calcular_distancia)
+- **Rotar objetos**: Permite rotar un objeto en un ángulo especificado. Selecciona un objeto y introducce el angulo. Presiona Ángulo de Rotación (object.rotar_objeto)
+- **Escalar objetos**: Cambia la escala de un objeto con un factor especificado. Seleciona un objeto y introducce el factor de escala. Presiona Ajustar Escala (object.ajustar_escala_uniformemente)
+- **Copiar y distribuir objetos**: Crea varias copias de un objeto y las distribuye a una distancia determinada. Seleciona un objeto y introducce el número de copias y la distancia al objeto original. Presiona Copiar y Distribuir (object.copiar_y_distribuir)
+- **Aplicar material**: Aplica un material personalizado a los objetos seleccionados. Selecciona un objeto, asígnale un material y ajusta sus propiedades. Da un nombre al material. Luego, selecciona otro(s) objeto(s) e introduce el nombre del material. Presiona Aplicar Material Predeterminado (object.aplicar_material_predeterminado)
 
 ## Instalación
 1. Descarga el complemento y guarda el archivo en tu computadora.
