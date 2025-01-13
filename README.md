@@ -4,7 +4,7 @@
 # MyFirstAddon
 
 ## Descripción
-**MyFirstAddon** es un Addon para Blender que contiene una colección de operadores útiles para artistas 3D. Con este complemento, los usuarios pueden realizar varias operaciones, como mover el origen de un objeto al origen mundial, rotar y escalar objetos, calcular distancias y copiar objetos.
+**MyFirstAddon** es un Addon para Blender que contiene una colección de operadores útiles para artistas 3D. Con este Addon, los usuarios pueden realizar varias operaciones, como mover el origen de un objeto al origen mundial, rotar y escalar objetos, calcular distancias y copiar objetos.
 
 ### Funciones:
 - **Mover origen al origen mundial**: Establece el origen del objeto activo en el origen mundial (0,0,0). (mesh.move_origin_to_world)
@@ -15,10 +15,10 @@
 - **Aplicar material**: Aplica un material personalizado a los objetos seleccionados. Selecciona un objeto, asígnale un material y ajusta sus propiedades. Da un nombre al material. Luego, selecciona otro(s) objeto(s) e introduce el nombre del material. Presiona Aplicar Material Predeterminado (object.aplicar_material_predeterminado)
 
 ## Instalación
-1. Descarga el complemento y guarda el archivo en tu computadora.
+1. Descarga el Addon y guarda el archivo en tu computadora.
 2. Abre Blender y ve a `Editar > Preferencias > Addons > Instalar`.
-3. Selecciona el archivo descargado y haz clic en `Instalar complemento`.
-4. Activa el complemento marcando la casilla junto al nombre del complemento.
+3. Selecciona el archivo descargado y haz clic en `Instalar Addon`.
+4. Activa el Addon marcando la casilla junto al nombre del Addon.
 
 ## Uso
 - Una vez activado el Addon, encontrarás una nueva pestaña en la vista 3D llamada "Herramientas Artista 3D".
