@@ -1,14 +1,13 @@
 
 
-proyecto_info = {
-    "name" : "MyFirstAddon",
-    "description" : "Version1",
-    "author" : "CarlottaMonath",
-    "version" : (0,0,1),
-    "blender" : (4,2,1),
-    
-    "location" : "Desktop > UXProyecto_final",
-    "category" : "UX_UI",
+bl_info = {
+    "name": "MyFirstAddon",
+    "author": "CarlottaMonath",
+    "version": (0,0,1),
+    "blender": (4,2,1),
+    "location" : "Desktop > UXPROYECTOFINAL",
+    "description": "Version1",
+    "category" : "UX_UI"
 }
 
 
@@ -169,7 +168,7 @@ class TestPanel( bpy.types.Panel ):
     bl_region_type = "UI"       # Zona de la pantalla
     bl_space_type = "VIEW_3D"   # Vista 3D
     bl_category = "Herramientas Artista 3D" # Nombre de la pestaña
-    bl_idname = "3D_VIEW_PT_HerramientasArtista3D"
+    bl_idname = "VIEW3D_PT_HerramientasArtista3D"
     
     def draw(self, context):
         layout = self.layout #
@@ -230,16 +229,14 @@ def register():
     bpy.utils.register_class( CalculateDistanceOperator )
     bpy.utils.register_class( AplicarMaterialPredeterminado )
     bpy.utils.register_class( RotarObjeto )
-    bpy.utils.register_class(CopiarYDistribuirObjeto)
-    bpy.utils.register_class(AjustarEscalaUniformemente)
-    bpy.utils.register_class(VIEW3D_MT_pie_menu_herramientas)    
+    bpy.utils.register_class( CopiarYDistribuirObjeto )
+    bpy.utils.register_class( AjustarEscalaUniformemente )
+    bpy.utils.register_class( VIEW3D_MT_pie_menu_herramientas )    
 
-    #pie menu
-    bpy.types.VIEW3D_MT_editor_menus.append(VIEW3D_MT_pie_menu_herramientas)
+    # Pie menu
+    bpy.types.VIEW3D_MT_editor_menus.append( VIEW3D_MT_pie_menu_herramientas )
 
-    
-    bpy.context.area.tag_redraw() 
-    
+        
     # Agregar propiedad para el nombre del material en la escena
     bpy.types.Scene.material_name = bpy.props.StringProperty(name="Nombre del Material", default="Material")
     
